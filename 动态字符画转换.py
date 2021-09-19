@@ -33,6 +33,6 @@ def gif2char(imgfile):
     for frame in frames:
         colorchar = img2char(frame)
         img_colorchars.append(colorchar)
-    img_colorchars[0].save("bcm_colorchar.gif",append_images=img_colorchars[1:],loop=0,save_all=True)
+    img_colorchars[0].save("output.gif",append_images=img_colorchars[1:],loop=0,save_all=True)
 
-gif2char("bcm.gif")
+gif2char("input.gif")
